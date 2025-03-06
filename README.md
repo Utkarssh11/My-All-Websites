@@ -7,19 +7,6 @@ This is a collection of all my professional and personal websites that showcase 
 You can access the live version of the project here:  
 [My-All-Websites Live](https://utkarssh11.github.io/My-All-Websites/)
 
-## Links
-
-Here are the links to my various online profiles and portfolios:
-
-- [LinkedIn](https://www.linkedin.com/in/utkarsh-patidar-800081221/)
-- [GitHub](https://github.com/Utkarssh11)
-- [LeetCode](https://leetcode.com/utkarssh_/)
-- [GeeksforGeeks](https://auth.geeksforgeeks.org/user/utkarshpaqzjs/practice)
-- [HackerRank](https://www.hackerrank.com/profile/utkarshpatidar01)
-- [LinkTree](https://linktr.ee/utkarsh_patidar)
-- [Personal Website](https://utkarshpatidar.vercel.app/)
-- [Jobs Profile (LinkTree)](https://linktr.ee/UtkarshJobsProfile)
-
 ## Technologies Used
 
 - **HTML**: To structure the content of the website.
