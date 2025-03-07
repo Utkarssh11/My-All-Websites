@@ -5,7 +5,7 @@ This is a collection of all my professional and personal websites that showcase 
 ## Live Version
 
 You can access the live version of the project here:  
-[My-All-Websites Live](https://utkarssh11.github.io/My-All-Websites/)
+[My-All-Websites Live](https://utkarssh11.githu.io/My-All-Websites/)
 
 ## Technologies Used
 
