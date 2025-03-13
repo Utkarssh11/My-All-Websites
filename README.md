@@ -1,45 +1,60 @@
-# My-All-Websites
 
-This is a collection of all my professional and personal websites that showcase my skills, work, and online profiles. I created this project using **HTML**, **CSS**, and **JavaScript** to display links to various platforms where I am active. The goal of this project is to provide a central hub where all my web presences can be accessed conveniently.
+## How It Works
 
-## Live Version
+### Booking Logic
+- **Same Floor Booking**:  
+  When a user requests a certain number of rooms (up to 5), the system first checks each floor to see if it has enough available consecutive rooms.
+  
+- **Cross-Floor Booking**:  
+  If enough consecutive rooms aren't available on the same floor, the system calculates the total travel time between potential room combinations across different floors and selects the one with the least travel time.
 
-You can access the live version of the project here:  
-[My-All-Websites Live](https://utkarssh11.githu.io/My-All-Websites/)
+- **Travel Time Calculation**:  
+  - Horizontal travel between adjacent rooms on the same floor takes 1 minute per room.
+  - Vertical travel between floors takes 2 minutes per floor.
 
-## Technologies Used
+### Example
 
-- **HTML**: To structure the content of the website.
-- **CSS**: To style the webpage and make it responsive and visually appealing.
-- **JavaScript**: To add interactive elements and enhance user experience.
+For example, if the available rooms are:
 
-## Features
+- **Floor 1**: 101, 102, 105, 106
+- **Floor 2**: 201, 202, 203, 210
+- **Floor 3**: 301, 302
 
-- A clean and simple layout for easy navigation.
-- Links to multiple professional platforms to showcase different aspects of my work.
-- Mobile-friendly and responsive design.
+And the user requests **4 rooms**, the system will prioritize booking rooms on **Floor 1** (101, 102, 105, 106) as they are all available and minimize the travel time.
 
-## How to Use
+However, if only **2 rooms** are available on **Floor 1** (101, 102), the system will select **201 and 202** on **Floor 2** as this minimizes vertical and horizontal travel.
 
-1. Clone this repository using the following command:
-    ```bash
-    git clone https://github.com/Utkarssh11/My-All-Websites.git
-    ```
-2. Navigate into the project directory:
-    ```bash
-    cd My-All-Websites
-    ```
-3. Open the `index.html` file in your browser to view the project.
+## Live Application Link
 
-## Contributing
+You can access the live version of the Hotel Room Reservation System here:  
+[Hotel Room Reservation System Live](https://your-live-app-link.com)
 
-Feel free to fork this repository, create a pull request, and contribute to the project. I welcome suggestions for improvement!
+## Screenshots
+
+Include screenshots of the application to showcase its functionality, such as:
+- The booking interface.
+- The random occupancy generation.
+- Resetting the booking.
+
+## Code Repository
+
+The source code for the application is available on GitHub:  
+[GitHub Repository](https://github.com/yourusername/hotel-room-reservation-system)
+
+## Challenges Faced
+
+- **Optimizing Travel Time**:  
+  One of the main challenges was ensuring that the system efficiently minimized travel time when booking rooms across multiple floors. A simple algorithm was used to prioritize minimizing both horizontal and vertical travel times.
+  
+- **Ensuring Responsive Design**:  
+  Making sure the UI looks good and functions properly on all screen sizes was another challenge that was addressed by using flexible layouts and media queries in the CSS.
+
+## Future Enhancements
+
+- **User Accounts**: Allow users to create accounts to view their booking history.
+- **Advanced Search Filters**: Allow users to filter rooms by type (single, double, suite, etc.).
+- **Booking Confirmation Email**: Add functionality to send a confirmation email upon successful booking.
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
-**Utkarsh Patidar**  
-Check out my profiles and connect with me!
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
